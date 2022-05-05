@@ -54,7 +54,7 @@ open class Highlightr
         jsContext.setObject(window, forKeyedSubscript: "window" as NSString)
 
         #if SWIFT_PACKAGE
-        let bundle = Bundle.module
+        let bundle = Bundle.swiftUIPreviewsCompatibleModule
         #else
         let bundle = Bundle(for: Highlightr.self)
         #endif
